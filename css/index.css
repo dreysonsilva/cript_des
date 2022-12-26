@@ -1,0 +1,75 @@
+main {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+.titulo-campo {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    margin: 20px 20px 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.texto-entrada, .texto-saida {
+    border-radius: 14px;
+    display: inline-block;
+    width: 400px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.texto-entrada {
+    left: 0;
+}
+
+.texto-saida {
+    right: 0;
+}
+
+.chave {
+    display: inline-block;
+    margin-top: 8px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-width: 1px;
+}
+
+.botoes-formulario {
+    display: inline-block;
+}
+
+.botao-criptografar {
+    margin-left: 20px;
+}
+
+.botao-criptografar, .botao-descriptografar {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: darkslategrey;
+    border-width: 2px;
+    width: 208px;
+    color: white;
+    background-color: darkslategrey;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 400ms;
+}
+
+.botao-criptografar:hover {
+    color: darkslategrey;
+    background-color: white;
+	cursor:pointer;
+}
+
+.botao-descriptografar:hover {
+    color: darkslategrey;
+    background-color: white;
+	
+	cursor:pointer;
+}

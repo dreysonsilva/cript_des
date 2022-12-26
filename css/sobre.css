@@ -1,0 +1,64 @@
+main {
+    position: relative;
+    width: 940px;
+    margin: 20px auto;
+    padding: 20px
+}
+
+main h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.texto-conteudo {
+    margin-bottom: 40px;
+}
+
+.texto-conteudo p {
+    margin: 20px;
+}
+
+.lista-linguagens {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.lista-linguagens p {
+    display: inline-block;
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+
+.imagem-linguagem {
+    width: 26px;
+    height: 26px;
+    transition: all 400ms;
+}
+
+.imagem-linguagem:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.lista-contatos li {
+    margin: 10px;
+}
+
+.lista-contatos strong {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        width: auto;
+    }
+
+    .lista-contatos p {
+        word-break: break-all;
+    }
+
+    .lista-contatos strong {
+        display: block;
+    }
+}

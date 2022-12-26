@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografando ONE</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="js/script.js"></script>
+    <main>
+        <form>
+            <fieldset>
+                <label class="titulo-campo">Input
+                    <textarea rows="20" cols="50" id="texto-entrada" class="texto-entrada" placeholder="Digite seu texto aqui"></textarea>
+                </label>
+                <label class="titulo-campo">Exit
+                    <textarea rows="20" cols="50" id="texto-saida" class="texto-saida" placeholder="Texto de saída" readonly onclick="copyContent()"></textarea>
+                </label>
+                <label class="titulo-campo">Key
+                    <input type="text" id="chave" class="chave" placeholder="Chave de criptografia">
+                </label>
+                
+                <div class="botoes-formulario">
+                    <input type="button" id="criptografar" class="botao-criptografar" value="Criptografar" onclick="clickEncryptBtn()">
+                    <input type="button" id="descriptografar" class="botao-descriptografar" value="Descriptografar" onclick="clickDecryptBtn()">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

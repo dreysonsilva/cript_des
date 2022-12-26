@@ -1,0 +1,91 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+.caixa-cabecalho, .caixa-rodape {
+    width: 940px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+header {
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 6px 10px black;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header h1 img {
+    width: 60px;
+    height: 60px;
+}
+
+header nav {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+header nav a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: all 400ms;
+
+    width: auto;
+    height: auto;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: darkslategrey;
+    border: 2px solid darkslategrey;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: darkslategrey;
+}
+
+header nav li {
+    display: inline-block;
+    padding-left: 8px;
+}
+
+/* FOOTER */
+footer {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -6px 10px black;
+    margin-top: 20px;
+    height: 40px;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    top: 20px;
+}
+
+footer p:before {
+    content: '\00A9';
+    padding-right: 2px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa-cabecalho, .caixa-rodape {
+        width: auto;
+    }
+
+    .caixa-rodape {
+        margin-top: 60%;
+    }
+}
